@@ -25,3 +25,12 @@ a {
  padding: 10px; 
  border: 2px dashed midnightblue; 
 }
+
+assign {
+ border-radius: 20px; 
+}
+Explain a:hover, img:hover, h1:hover
+a:hover {
+ text-decoration: none; 
+ color: salmon; 
+}
