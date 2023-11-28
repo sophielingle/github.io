@@ -33,7 +33,7 @@ h1:hover {
  border: 2px dashed midnightblue;
 }
 
-.assign img hover {
+.assign img:hover {
  width: 200px;
  padding: 10px;
  border: 2px solid green;
