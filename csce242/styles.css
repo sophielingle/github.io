@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5c6450;
+    background: #B2BF9F;
+}
+
+#content {
+    background: #ebf0e5;
+    padding:5px;
+    margin:20px auto;
+    width:80%;
+    border-radius: 10px;
+    border:5px solid #95a67c;
+}
+
+#main-nav li {
+    list-style-type: none; /*no bullets*/
+}
+
+#main-nav a {
+    text-decoration: none; /*no underline*/
+    background:#596050;
+    color:white;
+    padding: 1px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    background:white;
+    color: #596050;
+}
+

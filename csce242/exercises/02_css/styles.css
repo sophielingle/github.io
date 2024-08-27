@@ -1,21 +1,49 @@
 /* Structure */
 body {
-    background:violet;
+    background:#aca542;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-div {
-    background:white;
+#content {
+    background:#f2ddd6;
     padding:5px;
     margin:20px auto;
     width:70%;
+    border-radius:10px;
+    border:5px solid green;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0px; /*removes left padding*/
+    width:fit-content;
+    margin: auto;
+}
+
+#main-nav li {
+    list-style-type: none; /*no bullets*/
+    display:inline-block; /*appear on one line*/
+}
+
+#main-nav a {
+    text-decoration: none; /*no underline*/
+    background:#dfab98;
+    color:white;
+    padding:5px;
+    margin:5px;
+    border-radius:2px;
+}
+
+#main-nav a:hover {
+    background:black;
+    color:#dfab98;
 }
 
 /* Typography */
 h1 {
-    color:red;
+    color:#bf5630;
 }
 
 p {
-    color:blue;
+    color:#863c22;
 }
