@@ -1,0 +1,153 @@
+/* Structure */
+body {
+    background: #f1f2e9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background: #f8f4d4;
+    border: 1px solid #a4bfb8;
+}
+
+#main-header {
+    background: #f8f4d4;
+}
+
+#separations section {
+    background: #a4bfb8;
+}
+
+#main-aside {
+    background: #d98282;
+}
+
+#other-aside {
+    background: #d98282;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+/* Navigation */
+#main-nav li {
+    list-style: none;
+    border: 1px solid #a4bfb8;
+}
+
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    background: #d98282;
+    color: #ffffff;
+    display: block;
+}
+
+/* Typography */
+#main-footer p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #729394;
+}
+
+h2 {
+    color: #729394;
+    margin-left: 30px;
+}
+
+#main-aside h3 {
+    margin-left: 40px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+#titles1 h3 {
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#titles2 h3 {
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#titles1 p {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#titles2 p {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#main-aside a {
+    color: #ffffff;
+}
+
+#main-aside li {
+    list-style: none;
+}
+
+#big1 p, h3{
+    color: #729394;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#big2 p, h3{
+    color: #729394;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#big3 p, h3 {
+    color: #729394;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+}
