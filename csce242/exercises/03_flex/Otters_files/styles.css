@@ -1,0 +1,50 @@
+/* Structure */
+body {
+    background: url("images/water.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+
+#main-header {
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+#main-footer {
+    background-color: violet;
+}
+
+/* Navigation */
+#main-nav li {
+    list-style: none;
+    border-bottom: 1px solid violet;
+}
+
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    padding: 5px;
+    background: black;
+    color: violet;
+    display:block;
+}
+
+/* Typography */
+#main-footer p {
+    text-align: center;
+}
+
+/* Media Queries */
+/* Apply to 768px and larger */
+@media only screen and (min-width: 768px) {
+    
+}
