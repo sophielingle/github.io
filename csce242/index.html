@@ -6,24 +6,34 @@
     </head>
     <body>
         <div id="content">
-            <h1>CSCE 242: Website Applications</h1>
-            <h2>Sophie Lingle</h2>
-            <p>Website Applications is a course designed to teach students how to develop applications for different situations. Not only are these websites created, but designed with efficiency in mind for the user. Languages such as HTML, CSS, and JavasScript will be used to complete assignments.</p>
-            <h2>Assignments</h2>
-            <nav id="main-nav">
-                <ol nav>
-                    <li><a href="assignments/assignment01/index.html">Assignment 1</a></li>
-                    <li><a href="assignments/assignment02/index.html">Assignment 2</a></li>
-                </ol>
-            </nav>
-
-            <nav id="main-nav">
-            <h2>Exercises</h2>
-                <ol nav>
-                    <li><a href="exercises/01_html/index.html">Exercise 1</a></li>
-                    <li><a href="exercises/02_css/index.html">Exercise 2</a></li>
-                </ol>
-            </nav>
+            <header id="main-header">
+                <h2>Sophie Lingle</h2>
+                <h1>CSCE 242: Website Applications</h1>
+                <p>Website Applications is a course designed to teach students how to develop applications for different situations. Not only are these websites created, but designed with efficiency in mind for the user. Languages such as HTML, CSS, and JavaScript will be used to complete assignments.</p>
+            </header>
+            <div id="main-content">
+                <h2>Assignments</h2>
+                <div id="assignments" class="columns">
+                    <section class="one">
+                        <h3><a href="assignments/assignment01/index.html">Assignment 1 - Basic HTML</a></h3>
+                        <img src="images/assignment1.png">
+                        <p>This assignment taught us how to build a basic web page using html. I built a website describing the pros of vinyl records.</p>
+                    </section>
+                    <section class="one">
+                        <h3><a href="assignments/assignment02/index.html">Assignment 2 - Basic CSS</a></h3>
+                        <img src="images/assignment2.png">
+                        <p>This assignment taught us how to design a web page using css. I created a web page about my favorite dog breed and added colors and backgrounds.</p>
+                    </section>
+                    <section class="one">
+                        <h3><a href="assignments/assignment03/index.html">Assignment 3 - Page Layout</a></h3>
+                        <img src="https://place-hold.it/300">
+                        <p>This assignment taught us how to format and align a web page using CSS flex.</p>
+                    </section>
+                </div>
+            </div>
+            <footer id="main-footer">
+                <p>&copy; sophielingle</p>
+            </footer>
         </div>
     </body>
 </html>

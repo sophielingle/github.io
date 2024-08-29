@@ -1,7 +1,12 @@
+/* Structure */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #5c6450;
     background: #B2BF9F;
+}
+
+#main-content h2 {
+    text-align: center;
 }
 
 #content {
@@ -13,21 +18,61 @@ body {
     border:5px solid #95a67c;
 }
 
-#main-nav li {
-    list-style-type: none; /*no bullets*/
+#main-header h1, p {
+    text-align: center;
 }
 
-#main-nav a {
-    text-decoration: none; /*no underline*/
-    background:#596050;
-    color:white;
-    padding: 1px;
+#assignments section {
+    background: #ffffff;
+    padding: 5px;
     margin: 5px;
-    border-radius: 2px;
+    text-align: center;
+    border-radius: 5px;
+
 }
 
-#main-nav a:hover {
-    background:white;
-    color: #596050;
+#assignments a {
+    text-decoration: none; /*no underline*/
+    list-style-type: none; /*no bullets*/
+    color:#5c6450;
 }
 
+#assignments p {
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+h2 {
+    text-align: left;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+}
