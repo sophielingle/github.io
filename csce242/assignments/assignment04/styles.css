@@ -1,0 +1,392 @@
+/* Structure */
+:root {
+    --main-background-color: #73000a;
+    --hover-background: #cc2e40;
+    --secondary-background: #ECECEC;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#heading h1 {
+    padding-left: 10px;
+}
+
+#top-head {
+    background: black;
+    padding: 15px 20px;
+}
+
+#title {
+    position: relative;
+    top: -60px;
+    bottom: 0px;
+}
+
+#first-div {
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 0px;
+
+}
+
+#section2 {
+    background: var(--main-background-color);
+}
+
+#second-div {
+    color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 10px;
+}
+
+#section3 {
+    background: var(--secondary-background);
+}
+
+#third-div {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+#section4 {
+    background: white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+#section5 {
+    width: 75%;
+    margin: auto;
+}
+
+#fifth-background {
+    background: black;
+}
+
+#ending {
+    background: var(--main-background-color);
+    padding: 30px;
+}
+
+#section6 {
+    width: 80%;
+    margin: auto;
+}
+
+#sixth-div {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navigation */
+#nav-bar {
+    background: var(--main-background-color);
+}
+
+#main-nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#main-nav ul {
+    width: 80%;
+    margin: auto;
+}
+
+#main-nav li {
+    list-style-type: none; /*no bullets*/
+    padding: 10px;
+}
+
+#main-nav a {
+    text-decoration: none; /*no underline*/
+    color:white;
+    margin: 10px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-nav a:hover {
+    background: var(--hover-background);
+    color: white;
+}
+
+#footer {
+    background: black;
+}
+
+#footer-nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#footer-nav ul {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+#footer-nav li {
+    list-style-type: none; /*no bullets*/
+}
+
+#footer-nav a {
+    text-decoration: none; /*no underline*/
+    color:white;
+    margin: 10px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-nav a:hover {
+    background: var(--hover-background);
+    color: white;
+}
+
+/* Buttons */
+#section2 ul {
+    margin-top: 20px;
+    padding-left:0px; /*removes left padding*/
+    width:fit-content;
+}
+
+#section2 li {
+    list-style-type: none; /*no bullets*/
+}
+
+#section2 a {
+    text-decoration: none; /*no underline*/
+    background: black;
+    color:white;
+    padding:20px;
+    border-color: white;
+    border: solid;
+}
+
+#section2 a:hover {
+    background:white;
+    color: var(--main-background-color);
+}
+
+#section3 ul {
+    margin-top: 20px;
+    padding-left:0px; /*removes left padding*/
+    width:fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#section3 li {
+    list-style-type: none; /*no bullets*/
+}
+
+#section3 a {
+    text-decoration: none; /*no underline*/
+    background: var(--main-background-color);
+    color:white;
+    padding:20px;
+    border-color: white;
+    border: solid;
+}
+
+#section3 a:hover {
+    background:white;
+    color: var(--main-background-color);
+    border-color: white;
+    border: solid;
+}
+
+#section5 ul {
+    margin-top: 20px;
+    padding-left:0px; /*removes left padding*/
+    width:fit-content;
+    margin-top: 50px;
+}
+
+#section5 li {
+    list-style-type: none; /*no bullets*/
+}
+
+#section5 a {
+    text-decoration: none; /*no underline*/
+    background: var(--main-background-color);
+    color:white;
+    padding:20px;
+    border-color: white;
+    border: solid;
+}
+
+#section5 a:hover {
+    background:white;
+    color: var(--main-background-color);
+    border-color: var(--main-background-color);
+    border: solid;
+}
+
+/* Typography */
+#section1 h1 {
+    color: white;
+    background: var(--main-background-color);
+    padding: 30px 25px;
+    margin-top: 0px;
+    width: 55%;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-size: 45px;
+    font-style: bold;
+    text-align: center;
+}
+
+#section2 p {
+    padding-bottom: 20px;
+}
+
+#section3 h1 {
+    color: var(--main-background-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 45px;
+    font-style: bold;
+    text-align: center;
+}
+
+#section3 p {
+    padding-bottom: 50px;
+}
+
+#section4 h1 {
+    color: var(--main-background-color);
+    font-size: 40px;
+    text-align: center;
+}
+
+#section4 p {
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#section4 h4 {
+    text-align: left;
+}
+
+#section4 h3 {
+    color: var(--main-background-color);
+}
+
+#fifth-div {
+    padding-left: 20px;
+    color: white;
+}
+
+#fifth-div h1 {
+    font-size: 40px;
+}
+
+#sixth-div h3 {
+    text-decoration: underline;
+    color: white;
+}
+
+#sixth-div ul {
+    margin-top: 20px;
+    padding-left:0px; /*removes left padding*/
+    width:fit-content;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+#sixth-div li {
+    list-style-type: none; /*no bullets*/
+    padding: 5px;
+}
+
+#sixth-div a {
+    font-size: 12px;
+    text-decoration: none; /*no underline*/
+    color:white;
+}
+
+#sixth-div a:hover {
+    background: var(--hover-background);
+}
+
+.university {
+    color: white;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #heading {
+        width: 80%;
+    }
+
+    #first-div {
+        width: 50%;
+    }
+
+    #second-div {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 200px;
+    }
+}

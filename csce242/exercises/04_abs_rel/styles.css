@@ -76,4 +76,12 @@ img {
     #login-menu ul {
         display: flex;
     }
+
+    #gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery section {
+        flex: 30%;
+    }
 }
