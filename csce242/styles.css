@@ -22,22 +22,57 @@ body {
     text-align: center;
 }
 
-#assignments section {
+#assignments1 section {
     background: #ffffff;
     padding: 5px;
     margin: 5px;
     text-align: center;
     border-radius: 5px;
-
 }
 
-#assignments a {
+#assignments1 a {
     text-decoration: none; /*no underline*/
     list-style-type: none; /*no bullets*/
     color:#5c6450;
 }
 
-#assignments p {
+#assignments1 p {
+    text-align: left;
+}
+
+#assignments2 section {
+    background: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#assignments2 a {
+    text-decoration: none; /*no underline*/
+    list-style-type: none; /*no bullets*/
+    color:#5c6450;
+}
+
+#assignments2 p {
+    text-align: left;
+}
+
+#projects section {
+    background: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#projects a {
+    text-decoration: none; /*no underline*/
+    list-style-type: none; /*no bullets*/
+    color:#5c6450;
+}
+
+#projects p {
     text-align: left;
 }
 
