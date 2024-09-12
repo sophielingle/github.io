@@ -29,3 +29,15 @@ const stopButton = document.getElementById("btn-stop");
 stopButton.onclick = () => {
     document.getElementById("stuff").classList.remove("ball");
 };
+
+//Showing data from an input field
+/*
+document.getElementById("txt-first-name").onkeyup = () => {
+    const textBox = document.getElementById("txt-first-name");
+    document.getElementById("result").innerHTML = textBox.value;
+}
+*/
+
+document.getElementById("txt-first-name").onkeyup = (event) => {
+    document.getElementById("result").innerHTML = event.target.value;
+}
