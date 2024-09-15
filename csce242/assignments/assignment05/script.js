@@ -11,6 +11,6 @@ document.getElementById("random-img").onclick = () => {
 }
 
 /* Slider */
-document.getElementById("myRange").onkeyup = () => {
-    document.getElementById("slider-img").style.right = document.getElementById("myRange").value +'px';
+document.getElementById("myRange").onclick = () => {
+    document.getElementById("slider-img").style.left = document.getElementById("myRange").value +'px';
 }
