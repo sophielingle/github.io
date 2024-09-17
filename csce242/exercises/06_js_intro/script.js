@@ -40,4 +40,4 @@ document.getElementById("txt-first-name").onkeyup = () => {
 
 document.getElementById("txt-first-name").onkeyup = (event) => {
     document.getElementById("result").innerHTML = event.target.value;
-}
+};
