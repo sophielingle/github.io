@@ -26,3 +26,10 @@ document.getElementById("txt-color").onchange = (e) => {
 document.getElementById("txt-color").onchange = (e) => {
     document.querySelector(":root").computedStyleMap.setProperty("--ball-color", e.target.value);
 };
+
+//Move ball down on button click
+let pos = 0;
+document.getElementById("move-down").onclick = () => {
+    pos++;
+    document.getElementById("ball").style.setProperty("top", pos + "px");
+}
