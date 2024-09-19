@@ -185,11 +185,11 @@ form {
 /* Visibility */
 .hidden {
     display: none;
-  }
+}
   
-  .hidden-small {
+.hidden-small {
     display: none;
-  }
+}
 
 /* Media Queries */
 /* Apply to 600px and larger */
