@@ -58,7 +58,7 @@ body {
     text-align: left;
 }
 
-#projects section {
+#projects1 section {
     background: #ffffff;
     padding: 5px;
     margin: 5px;
@@ -66,13 +66,31 @@ body {
     border-radius: 5px;
 }
 
-#projects a {
+#projects1 a {
     text-decoration: none; /*no underline*/
     list-style-type: none; /*no bullets*/
     color:#5c6450;
 }
 
-#projects p {
+#projects1 p {
+    text-align: left;
+}
+
+#projects2 section {
+    background: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#projects2 a {
+    text-decoration: none; /*no underline*/
+    list-style-type: none; /*no bullets*/
+    color:#5c6450;
+}
+
+#projects2 p {
     text-align: left;
 }
 
