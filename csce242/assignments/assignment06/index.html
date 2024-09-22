@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Sophie Lingle -->
-        <title>Assignment 6</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div id="content">
-            <h1>Assignment 6</h1>
-            <h2>If Statements</h2>
-            <a>Exercise 1</a>
-            <a>Exercise 2</a>
+  <head>
+    <!-- Sophie Lingle -->
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>Assignment 6</h1>
+      <h2>If Statements</h2>
+      <div id="nav">
+        <p id="toggle-nav-down" class="arrow">&#x25BC;</p>
+        <p id="toggle-nav-up" class="arrow hidden">&#x25B2;</p>
+        <nav id="nav-items" class="hidden-small">
+          <ul class="columns">
+            <li><a id="exercise1" href="#">Exercise 1</a></li>
+            <li><a id="exercise2" href="#">Exercise 2</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section id="exercise1-div" class="one hidden">
+        <h3>Color Slider</h3>
+        <div class="slide-container">
+          <input type="range" min="0" max="225" value="0" class="slider" id="myRange">
         </div>
-    </body>
+        <p id="color-message">  </p>
+      </section>
+      <section id="exercise2-div" class="one hidden">
+        <h3>Picture Chooser</h3>
+        <button id="small" class="size-btn">Small</button>
+        <button id="medium" class="size-btn">Medium</button>
+        <button id="large" class="size-btn">Large</button>
+        <p></p>
+        <img class="hidden" id="random-1" src="https://picsum.photos/50">
+        <img class="hidden" id="random-2" src="https://picsum.photos/100">
+        <img class="hidden" id="random-3" src="https://picsum.photos/200">
+      </section>
+      <script src="script.js"></script>
+      <footer id="main-footer">
+        <p>&copy; sophielingle</p>
+      </footer>
+  </body>
 </html>
