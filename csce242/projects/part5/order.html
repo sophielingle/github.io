@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Sophie Lingle's Website -->
+    <title>Novel Haven</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <!-- Logo -->
+                <section id="top-head">
+                    <div id="heading" class="columns">
+                        <img id="logo"src="images/logo.jpg">
+                        <h1>Novel Haven</h1>
+                    </div>
+                </section>
+
+                <!-- Navigation -->
+                <section id="nav-bar">
+                    <nav id="main-nav">
+                        <div id="toggle-nav">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <ul id="nav-items" class="columns">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="genres.html">TOP GENRES</a></li>
+                            <li><a href="best.html">BEST SELLERS</a></li>
+                            <li><a href="#">ORDER</a></li>
+                            <li><a href="admin.html">ADD BOOK</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+
+            <!-- Order Form -->
+            <div id="order-content" class="center-form">
+                <h1>Your Shopping Cart</h1>
+                <hr>
+                <form>
+                    <label class="one" for="genres">Genre:</label>
+                    <select name="genres">
+                        <option value="Value">Choose A Genre</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </form>
+                <form class="columns">
+                    <p class="one">Title: </p>
+                    <input type="text" placeholder="Title">
+                </form>
+                <form class="columns">
+                    <p class="one">Author: </p>
+                    <input type="text" placeholder="Author">
+                </form>
+                <form class="columns">
+                    <p class="one">Price: </p>
+                    <input name="text" placeholder="$0.00">
+                </form>
+                <button type="button">ORDER</button>
+            </div>
+
+            <!-- Footer -->
+            <footer id="main-footer">
+                <p>&copy; NovelHaven</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
