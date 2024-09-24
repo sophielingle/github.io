@@ -136,6 +136,14 @@ form {
     width:250px;
 }
 
+.info {
+    padding-left: 20px;
+}
+
+.book-img {
+    padding: 0px;
+}
+
 #main-footer {
     text-align: center;
     margin: auto;
