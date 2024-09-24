@@ -58,18 +58,3 @@ document.querySelectorAll("button.size-btn").onclick = (e) => {
         document.getElementById("random-3").classList.toggle("hidden");
     }
 };
-
-/*
-// Function to show picture based on the button clicked
-const showPicture = (size) => {
-        const pictureUrl = `https://picsum.photos/${size}`;
-        
-        // Set image source to display picture
-        document.getElementById('pictureDisplay').src = pictureUrl;
-    };
-
-// Event listeners for picture size buttons (Small, Medium, Large)
-document.getElementById('smallButton').addEventListener('click', () => showPicture(200));
-document.getElementById('mediumButton').addEventListener('click', () => showPicture(400));
-document.getElementById('largeButton').addEventListener('click', () => showPicture(600));
-*/
