@@ -41,7 +41,7 @@ document.getElementById("myRange").onchange = (e) => {
 };
 
 /* Exercise 2 */
-document.querySelectorAll("button.size-btn").onclick = (e) => {
+document.querySelector("button.size-btn").onclick = (e) => {
     if (e.target.innerHTML == "Small") {
         document.getElementById("random-1").classList.toggle("hidden");
         document.getElementById("random-2").classList.add("hidden");
