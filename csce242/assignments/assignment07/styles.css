@@ -36,6 +36,11 @@
     color: red;
   }
 
+  #star-msg {
+    color: var(--text-color);
+    text-align: left;
+  }
+
   footer {
     text-align: center;
   }

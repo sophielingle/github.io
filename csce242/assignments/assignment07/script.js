@@ -3,6 +3,7 @@ document.getElementById("draw-btn").onclick = () => {
     const map = document.getElementById("space");
     const amount = parseInt(document.getElementById("star-number").value);
     const error = document.getElementById("error");
+    const msg = document.getElementById("star-msg");
     error.innerHTML = "";
 
     if(isNaN(amount) || amount <= 0) {
@@ -27,9 +28,11 @@ document.getElementById("draw-btn").onclick = () => {
         star.style.top = `${y}px`;
 
         map.append(star);
+        msg.innerHTML = "";
 
         star.addEventListener('click', function() {
-            alert(`You clicked on star ${i+1}`);
+            msg.innerHTML = `You clicked on star ${i+1}`;
+            //alert(`You clicked on star ${i+1}`);
         });
     }
 }
