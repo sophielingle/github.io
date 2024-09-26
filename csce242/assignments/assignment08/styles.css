@@ -1,0 +1,93 @@
+/* Structure */
+:root {
+    --main-background: #2B7A78;
+    --secondary-background: #3AAFA9;
+    --div-background: #DEF2F1;
+    --slider-background: #d3d3d3;
+    --text-color: #17252A;
+  
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-background);
+  }
+  
+  #content {
+    padding: 5px;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .content-div {
+    margin: auto;
+    width: 95%;
+    background: var(--div-background);
+    border: solid var(--text-color);
+    padding: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: center; /* Center content in each cell */
+    padding: 10px;
+  }
+
+  .images {
+    width: 200px;  
+    height: auto;  
+    cursor: pointer;
+    border: solid var(--main-background) 2px;
+  }
+
+  #title {
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  #description {
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  /* Typography */
+  h1 {
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  h2 {
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  /* Larger Resolutions */
+  @media only screen and (min-width: 600px) {
+    #content {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .columns {
+      display: flex;
+      column-gap: 100px;
+    }
+  
+    .columns > * {
+      padding: 10px;
+      margin: 0px;
+    }
+  
+    .one {
+      flex: 1;
+    }
+  }
+    
