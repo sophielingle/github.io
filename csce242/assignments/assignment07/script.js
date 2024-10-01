@@ -35,4 +35,4 @@ document.getElementById("draw-btn").onclick = () => {
             //alert(`You clicked on star ${i+1}`);
         });
     }
-}
+};
