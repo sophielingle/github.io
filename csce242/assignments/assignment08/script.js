@@ -15,11 +15,11 @@ descriptions["images/shovel.jpg"] = 'You might need to wear gloves!';
 descriptions["images/work.jpg"] = 'Get to work!';
 
 /* Associative array loop */
-const table = document.querySelector("#img-table");
+const table = document.querySelector("#img-table"); 
 let count = 0;
 
 for(let image in titles) {
-    if (count % 3 === 0) {
+    if (count % 3 == 0) {
         var row = document.createElement("tr");
         table.append(row);
     }
