@@ -36,4 +36,4 @@ for(let image in titles) {
     });
 
     count++;
-}
+};
