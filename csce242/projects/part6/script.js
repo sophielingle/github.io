@@ -109,18 +109,18 @@ const getHorrorSection = (book) => {
     return a;
 };
 
-/* Shows the Horror Books */
+/* Shows the Drama Books */
 const showDrama = async () => {
     const books = await getBooks();
 
     books.forEach((book) => {
         if(getDramaSection(book)){
-            document.getElementById("horror-section").append(getDramaSection(book));
+            document.getElementById("drama-section").append(getDramaSection(book));
         }
     });
 };
 
-/* Creates each Horror Section */
+/* Creates each Drama Section */
 const getDramaSection = (book) => {
     if (book.genre !== "Drama") {
         return null; 
