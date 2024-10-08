@@ -76,6 +76,24 @@ body {
     text-align: left;
 }
 
+#assignments4 section {
+    background: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#assignments4 a {
+    text-decoration: none; /*no underline*/
+    list-style-type: none; /*no bullets*/
+    color:#5c6450;
+}
+
+#assignments4 p {
+    text-align: left;
+}
+
 #projects1 section {
     background: #ffffff;
     padding: 5px;
