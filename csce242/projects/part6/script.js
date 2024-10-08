@@ -20,12 +20,18 @@ const showBooks = async () => {
     const books = await getBooks();
 
     books.forEach((book) => {
-        document.getElementById("book-section").append(getBookSection(book));
+        if(getBookSection(book)){
+            document.getElementById("book-section").append(getBookSection(book));
+        }
     });
 };
 
 /* Creates each Book Section */
 const getBookSection = (book) => {
+    if (book.bestSeller !== "yes") {
+        return null; 
+    }
+
     const a = document.createElement("a");
     a.href = `book${book.id}.html`;
     
@@ -50,7 +56,7 @@ const getBookSection = (book) => {
     div.append(h3);
     div.append(p);
     section.append(div);
-
+    
     a.append(section)
 
     return a;
