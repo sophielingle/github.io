@@ -18,18 +18,17 @@ const getBooks = async () => {
 const showBestSellers = async () => {
     const books = await getBooks();
     books.forEach((book) => {
-        if (book.bestSeller === "yes") {
+        if (book.bestSeller == "yes") {
             document.getElementById("book-section").append(createBookSection(book));
         }
     });
 };
 
-
 /* Shows Books by Genre */
 const showBooksByGenre = async (genre, sectionId) => {
     const books = await getBooks();
     books.forEach((book) => {
-        if (book.genre === genre) {
+        if (book.genre == genre) {
             document.getElementById(sectionId).append(createBookSection(book));
         }
     });
@@ -60,6 +59,44 @@ const createBookSection = (book) => {
     div.append(h2, h3, p);
     section.append(div);
     a.append(section);
+
+    return a;
+};
+
+/* Shows An Individual Book */
+const showIndividualBook = async (title, sectionId) => {
+    const books = await getBooks();
+    books.forEach((book) => {
+        if (book.title == title) {
+            document.getElementById(sectionId).append(createFullBookSection(book));
+        }
+    });
+};
+
+/* Creates each Full Book Section */
+const createFullBookSection = (book) => {
+    const div = document.createElement("div");
+    section.classList.add("best-seller");
+
+    const section = document.createElement("section");
+    section.classList.add("columns");
+
+    const img = document.createElement("img");
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one", "book-img");
+    section.append(img);
+
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("info", "four");
+
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p1 = document.createElement("p");
+    p1.innerHTML = book.description;
+    const p2 = document.createElement("p");
+    p2.innerHTML = book.description;
 
     return a;
 };
