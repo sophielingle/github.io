@@ -66,15 +66,15 @@ const createBookSection = (book) => {
 /* Gets the Book ID from the URL */
 const getBookIdFromUrl = () => {
     const path = window.location.pathname;
-    const bookId = path.split('/').pop().split('.')[0]; // Get the last part of the path and remove '.html'
-    return parseInt(bookId.replace('book', '')); // Convert to an integer
+    const bookId = path.split('/').pop().split('.')[0]; 
+    return parseInt(bookId.replace('book', ''));
 };
 
 /* Shows Individual Book Pages */
 const showIndividualBook = async (id, sectionId) => {
     const books = await getBooks();
     books.forEach((book) => {
-        if (book.id === id) { // Compare directly as both are integers now
+        if (book.id == id) {
             document.getElementById(sectionId).append(createFullBookSection(book));
         }
     });
@@ -111,17 +111,25 @@ const createFullBookSection = (book) => {
     const p3 = document.createElement("p");
     p3.innerHTML = book.extended_description;
     const p4 = document.createElement("p");
-    p4.innerHTML = book.price;
+    p4.innerHTML = "Price: " + book.price;
+    
+    const listTitle = document.createElement("h3");
+    listTitle.innerHTML = "Our Favorite Chapters: ";
+    const ul = document.createElement("ul");
+    book.favorite_chapters.forEach((chapter)=>{
+        const li = document.createElement("li");
+        li.innerHTML = chapter;
+        ul.append(li);
+    });
 
-    div.append(section, p3, p4);
+    div.append(section, p3, p4, listTitle, ul);
 
     return div;
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const bookId = getBookIdFromUrl(); // Get the book ID from the URL
-    console.log(`Book ID: ${bookId}`);
-    await showIndividualBook(bookId, "book-details-section"); // Call the function with the section ID where you want to display the book details
+    const bookId = getBookIdFromUrl(); 
+    await showIndividualBook(bookId, "book-details-section"); 
 });
 
 showBestSellers();
