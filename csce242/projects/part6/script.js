@@ -5,7 +5,7 @@ document.querySelector("#toggle-nav").onclick = () => {
 
 /* Best Sellers Page Load */
 const getBooks = async () => {
-    const url = "https://portiaportia.github.io/json/ice-creams.json";
+    const url = "part6/books.json";
 
     try {
         const response = await fetch(url);
@@ -15,10 +15,10 @@ const getBooks = async () => {
     }
 };
 
-const showIceCream = async () => {
-    const iceCreams = await getIceCream();
+const showBooks = async () => {
+    const books = await getBooks();
 
-    iceCreams.forEach((iceCream) => {
+    books.forEach((book) => {
         document.getElementById("ice-cream-section").append(getIceCreamSection(iceCream));
     });
 };
