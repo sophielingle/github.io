@@ -134,5 +134,39 @@
             "Chapter 10",
             "Chapter 13"
         ]
+    },
+    {
+        "id": 9,
+        "title": "The List",
+        "bestSeller": "no",
+        "image": "list.jpg",
+        "author": "Yomi Adegoke",
+        "publication-year": "2023",
+        "genre": "Drama",
+        "description": "Ola Olajide, a celebrated journalist at Womxxxn magazine, is set to marry the love of her life in one month. She and her fiancé Michael are considered the “couple goals” of their social network and seem to have it all—that is, until one morning when they both wake up to the same message: Oh my god, have you seen The List?",
+        "extended-description": "Ola Olajide, a celebrated journalist at Womxxxn magazine, is set to marry the love of her life in one month. She and her fiancé Michael are considered the “couple goals” of their social network and seem to have it all—that is, until one morning when they both wake up to the same message: “Oh my god, have you seen The List?” It began as a crowdsourced collection of names and somehow morphed into an anonymous account posting allegations on social media. Ola would usually be the first to support such a list—she’d retweet it, call for the men to be fired, write article after article. Except this time Michael’s name is on it.",
+        "price": "$18.99",
+        "favorite-chapters": [
+            "Chapter 2",
+            "Chapter 6",
+            "Chapter 8"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Then She Was Gone",
+        "bestSeller": "no",
+        "image": "gone.jpg",
+        "author": "Lise Jewell",
+        "publication-year": "2017",
+        "genre": "Drama",
+        "description": "THEN She was fifteen, her mother's golden girl. She had her whole life ahead of her. And then, in the blink of an eye, Ellie was gone. NOW It’s been ten years since Ellie disappeared, but Laurel has never given up hope of finding her daughter.",
+        "extended-description": "THEN She was fifteen, her mother's golden girl. She had her whole life ahead of her. And then, in the blink of an eye, Ellie was gone. NOW It’s been ten years since Ellie disappeared, but Laurel has never given up hope of finding her daughter. And then one day a charming and charismatic stranger called Floyd walks into a café and sweeps Laurel off her feet. Before too long she’s staying the night at this house and being introduced to his nine year old daughter. Poppy is precocious and pretty - and meeting her completely takes Laurel's breath away. Because Poppy is the spitting image of Ellie when she was that age. And now all those unanswered questions that have haunted Laurel come flooding back. What happened to Ellie? Where did she go? Who still has secrets to hide?",
+        "price": "$8.99",
+        "favorite-chapters": [
+            "Chapter 1",
+            "Chapter 3",
+            "Chapter 5"
+        ]
     }
 ]

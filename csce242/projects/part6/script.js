@@ -62,18 +62,18 @@ const getBestSellerSection = (book) => {
     return a;
 };
 
-/* Shows the Best Sellers */
+/* Shows the Horror Books */
 const showHorror = async () => {
     const books = await getBooks();
 
     books.forEach((book) => {
-        if(getBestSellerSection(book)){
-            document.getElementById("book-section").append(getBestSellerSection(book));
+        if(getHorrorSection(book)){
+            document.getElementById("horror-section").append(getHorrorSection(book));
         }
     });
 };
 
-/* Creates each Best Seller Section */
+/* Creates each Horror Section */
 const getHorrorSection = (book) => {
     if (book.genre !== "Horror") {
         return null; 
@@ -109,5 +109,53 @@ const getHorrorSection = (book) => {
     return a;
 };
 
-document.getElementById("best").onclick = showBestSellers();
-document.getElementById("horror").onclick = showHorror();
+/* Shows the Horror Books */
+const showDrama = async () => {
+    const books = await getBooks();
+
+    books.forEach((book) => {
+        if(getDramaSection(book)){
+            document.getElementById("horror-section").append(getDramaSection(book));
+        }
+    });
+};
+
+/* Creates each Horror Section */
+const getDramaSection = (book) => {
+    if (book.genre !== "Drama") {
+        return null; 
+    }
+
+    const a = document.createElement("a");
+    a.href = `book${book.id}.html`;
+    
+    const section = document.createElement("section");
+    section.classList.add("columns");
+    section.classList.add("best-seller");
+    
+    const img = document.createElement("img");
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one");
+    section.append(img);
+    
+    const div = document.createElement("div");
+    div.classList.add("four");
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p = document.createElement("p");
+    p.innerHTML = book.description;
+    div.append(h2);
+    div.append(h3);
+    div.append(p);
+    section.append(div);
+    
+    a.append(section)
+
+    return a;
+};
+
+showBestSellers();
+showHorror();
+showDrama();
