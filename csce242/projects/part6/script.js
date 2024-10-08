@@ -15,19 +15,19 @@ const getBooks = async () => {
     }
 };
 
-/* Shows the Books */
-const showBooks = async () => {
+/* Shows the Best Sellers */
+const showBestSellers = async () => {
     const books = await getBooks();
 
     books.forEach((book) => {
-        if(getBookSection(book)){
-            document.getElementById("book-section").append(getBookSection(book));
+        if(getBestSellerSection(book)){
+            document.getElementById("book-section").append(getBestSellerSection(book));
         }
     });
 };
 
-/* Creates each Book Section */
-const getBookSection = (book) => {
+/* Creates each Best Seller Section */
+const getBestSellerSection = (book) => {
     if (book.bestSeller !== "yes") {
         return null; 
     }
@@ -62,4 +62,52 @@ const getBookSection = (book) => {
     return a;
 };
 
-showBooks();
+/* Shows the Best Sellers */
+const showHorror = async () => {
+    const books = await getBooks();
+
+    books.forEach((book) => {
+        if(getBestSellerSection(book)){
+            document.getElementById("book-section").append(getBestSellerSection(book));
+        }
+    });
+};
+
+/* Creates each Best Seller Section */
+const getHorrorSection = (book) => {
+    if (book.genre !== "Horror") {
+        return null; 
+    }
+
+    const a = document.createElement("a");
+    a.href = `book${book.id}.html`;
+    
+    const section = document.createElement("section");
+    section.classList.add("columns");
+    section.classList.add("best-seller");
+    
+    const img = document.createElement("img");
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one");
+    section.append(img);
+    
+    const div = document.createElement("div");
+    div.classList.add("four");
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p = document.createElement("p");
+    p.innerHTML = book.description;
+    div.append(h2);
+    div.append(h3);
+    div.append(p);
+    section.append(div);
+    
+    a.append(section)
+
+    return a;
+};
+
+document.getElementById("best").onclick = showBestSellers();
+document.getElementById("horror").onclick = showHorror();
