@@ -171,7 +171,7 @@
     },
     {
         "id": 11,
-        "title": "The Gues List",
+        "title": "The Guest List",
         "bestSeller": "no",
         "image": "guest.jpg",
         "author": "Lucy Foley",
@@ -218,6 +218,23 @@
             "Chapter 5",
             "Chapter 9",
             "Chapter 18"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Red, White and Royal Blue",
+        "bestSeller": "no",
+        "image": "red.jpg",
+        "author": "Casy McQuiston",
+        "publication-year": "2019",
+        "genre": "Romance",
+        "description": "First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep’s genius granddaughter, they’re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen Claremont. International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations. The plan for damage control: staging a fake friendship between the First Son and the Prince.",
+        "extended-description": "First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep’s genius granddaughter, they’re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen Claremont. International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations. The plan for damage control: staging a fake friendship between the First Son and the Prince. As President Claremont kicks off her reelection bid, Alex finds himself hurtling into a secret relationship with Henry that could derail the campaign and upend two nations. What is worth the sacrifice? How do you do all the good you can do? And, most importantly, how will history remember you?",
+        "price": "$9.99",
+        "favorite-chapters": [
+            "Chapter 1",
+            "Chapter 8",
+            "Chapter 15"
         ]
     }
 ]

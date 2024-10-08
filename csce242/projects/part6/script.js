@@ -156,6 +156,102 @@ const getDramaSection = (book) => {
     return a;
 };
 
+/* Shows the Mystery Books */
+const showMystery = async () => {
+    const books = await getBooks();
+
+    books.forEach((book) => {
+        if(getMysterySection(book)){
+            document.getElementById("mystery-section").append(getMysterySection(book));
+        }
+    });
+};
+
+/* Creates each Mystery Section */
+const getMysterySection = (book) => {
+    if (book.genre !== "Mystery") {
+        return null; 
+    }
+
+    const a = document.createElement("a");
+    a.href = `book${book.id}.html`;
+    
+    const section = document.createElement("section");
+    section.classList.add("columns");
+    section.classList.add("best-seller");
+    
+    const img = document.createElement("img");
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one");
+    section.append(img);
+    
+    const div = document.createElement("div");
+    div.classList.add("four");
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p = document.createElement("p");
+    p.innerHTML = book.description;
+    div.append(h2);
+    div.append(h3);
+    div.append(p);
+    section.append(div);
+    
+    a.append(section)
+
+    return a;
+};
+
+/* Shows the Romance Books */
+const showRomance = async () => {
+    const books = await getBooks();
+
+    books.forEach((book) => {
+        if(getRomanceSection(book)){
+            document.getElementById("romance-section").append(getRomanceSection(book));
+        }
+    });
+};
+
+/* Creates each Romance Section */
+const getRomanceSection = (book) => {
+    if (book.genre !== "Romance") {
+        return null; 
+    }
+
+    const a = document.createElement("a");
+    a.href = `book${book.id}.html`;
+    
+    const section = document.createElement("section");
+    section.classList.add("columns");
+    section.classList.add("best-seller");
+    
+    const img = document.createElement("img");
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one");
+    section.append(img);
+    
+    const div = document.createElement("div");
+    div.classList.add("four");
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p = document.createElement("p");
+    p.innerHTML = book.description;
+    div.append(h2);
+    div.append(h3);
+    div.append(p);
+    section.append(div);
+    
+    a.append(section)
+
+    return a;
+};
+
 showBestSellers();
 showHorror();
 showDrama();
+showMystery();
+showRomance();
