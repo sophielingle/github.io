@@ -63,11 +63,18 @@ const createBookSection = (book) => {
     return a;
 };
 
-/* Shows An Individual Book */
-const showIndividualBook = async (title, sectionId) => {
+/* Gets the Book ID from the URL */
+const getBookIdFromUrl = () => {
+    const path = window.location.pathname;
+    const bookId = path.split('/').pop().split('.')[0]; // Get the last part of the path and remove '.html'
+    return parseInt(bookId.replace('book', '')); // Convert to an integer
+};
+
+/* Shows Individual Book Pages */
+const showIndividualBook = async (id, sectionId) => {
     const books = await getBooks();
     books.forEach((book) => {
-        if (book.title == title) {
+        if (book.id === id) { // Compare directly as both are integers now
             document.getElementById(sectionId).append(createFullBookSection(book));
         }
     });
@@ -76,7 +83,7 @@ const showIndividualBook = async (title, sectionId) => {
 /* Creates each Full Book Section */
 const createFullBookSection = (book) => {
     const div = document.createElement("div");
-    section.classList.add("best-seller");
+    div.classList.add("best-seller");
 
     const section = document.createElement("section");
     section.classList.add("columns");
@@ -92,14 +99,30 @@ const createFullBookSection = (book) => {
     const h2 = document.createElement("h2");
     h2.innerHTML = book.title;
     const h3 = document.createElement("h3");
-    h3.innerHTML = book.author;
+    h3.innerHTML = "Author: " + book.author;
     const p1 = document.createElement("p");
-    p1.innerHTML = book.description;
+    p1.innerHTML = "Publication Year: " + book.publication_year;
     const p2 = document.createElement("p");
-    p2.innerHTML = book.description;
+    p2.innerHTML = "Genre: " + book.genre;
 
-    return a;
+    infoDiv.append(h2, h3, p1, p2);
+    section.append(infoDiv);
+
+    const p3 = document.createElement("p");
+    p3.innerHTML = book.extended_description;
+    const p4 = document.createElement("p");
+    p4.innerHTML = book.price;
+
+    div.append(section, p3, p4);
+
+    return div;
 };
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const bookId = getBookIdFromUrl(); // Get the book ID from the URL
+    console.log(`Book ID: ${bookId}`);
+    await showIndividualBook(bookId, "book-details-section"); // Call the function with the section ID where you want to display the book details
+});
 
 showBestSellers();
 showBooksByGenre("Horror", "horror-section");
