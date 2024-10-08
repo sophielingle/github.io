@@ -3,9 +3,9 @@ document.querySelector("#toggle-nav").onclick = () => {
     document.getElementById("nav-items").classList.toggle("hidden-small");
 };
 
-/* Best Sellers Page Load */
+/* Gets the Books from JSON File */
 const getBooks = async () => {
-    const url = "part6/books.json";
+    const url = "https://sophielingle.github.io/csce242/json/books.json";
 
     try {
         const response = await fetch(url);
@@ -15,29 +15,45 @@ const getBooks = async () => {
     }
 };
 
+/* Shows the Books */
 const showBooks = async () => {
     const books = await getBooks();
 
     books.forEach((book) => {
-        document.getElementById("ice-cream-section").append(getIceCreamSection(iceCream));
+        document.getElementById("book-section").append(getBookSection(book));
     });
 };
 
-const getIceCreamSection = (iceCream) => {
+/* Creates each Book Section */
+const getBookSection = (book) => {
+    const a = document.createElement("a");
+    a.href = `book${book.id}.html`;
+    
     const section = document.createElement("section");
-    section.classList.add("ice-cream");
-    section.classList.add("container");
-   
+    section.classList.add("columns");
+    section.classList.add("best-seller");
+    
     const img = document.createElement("img");
-    img.src = `https://portiaportia.github.io/json/images/ice-creams/${iceCream.image}`;
+    img.src = `https://sophielingle.github.io/csce242/projects/part6/images/${book.image}`;
+    img.classList.add("one");
     section.append(img);
-
+    
     const div = document.createElement("div");
-    div.classList.add("overlay");
-    div.innerHTML = iceCream.name;
+    div.classList.add("four");
+    const h2 = document.createElement("h2");
+    h2.innerHTML = book.title;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = book.author;
+    const p = document.createElement("p");
+    p.innerHTML = book.description;
+    div.append(h2);
+    div.append(h3);
+    div.append(p);
     section.append(div);
 
-    return section;
+    a.append(section)
+
+    return a;
 };
 
-showIceCream();
+showBooks();

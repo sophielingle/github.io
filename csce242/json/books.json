@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "The Housemaid is Watching",
-        "img-name": "watching.jpg",
+        "image": "watching.jpg",
         "author": "Freida McFadden",
         "publication-year": "2024",
         "genre": "Drama",
@@ -18,7 +18,7 @@
     {
         "id": 2,
         "title": "Witches Get Stuff Done",
-        "img-name": "witches.jpg",
+        "image": "witches.jpg",
         "author": "Molly Harper",
         "publication-year": "2024",
         "genre": "Romance",
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "title": "No Strangers Here",
-        "img-name": "strangers.jpg",
+        "image": "strangers.jpg",
         "author": "Carlene O'Connor",
         "publication-year": "2022",
         "genre": "Mystery",
@@ -50,7 +50,7 @@
     {
         "id": 4,
         "title": "This Is How You Lose the Time War",
-        "img-name": "time.jpg",
+        "image": "time.jpg",
         "author": "Amal El-Mohtar and Max Gladstone",
         "publication-year": "2019",
         "genre": "Science Fiction",
@@ -66,7 +66,7 @@
     {
         "id": 5,
         "title": "Notes From Underground",
-        "img-name": "notes.jpg",
+        "image": "notes.jpg",
         "author": "Fyodor Dostoesvky",
         "publication-year": "1864",
         "genre": "Fiction",
