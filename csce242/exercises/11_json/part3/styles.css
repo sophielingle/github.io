@@ -1,12 +1,13 @@
 :root {
-  --primary: coral;
-  --secondary: cornflowerblue;
+  --primary: blanchedalmond;
+  --secondary: ;
 }
 
 /* Structure */
 body {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: azure;
+  background-color: #73A1B2;
 }
 
 /* Navigation */
@@ -35,6 +36,12 @@ body {
 }
 
 /* Typography */
+h1 {
+  color: #D0D5CE;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 35px;
+}
+
 #main-nav-items {
   font-size: 1.2em;
 }
@@ -56,9 +63,11 @@ body {
 }
 
 .drink {
-  background: #fff;
   padding: 5px;
   margin: 5px;
+  background-color: #D0D5CE;
+  border-radius: 5px;
+  border: solid #6E8658 5px;
 }
 
 h3 {
@@ -69,6 +78,12 @@ h3 {
   max-width: 40%;
   display: block;
   margin: auto;
+}
+
+.drink:hover {
+  background-color: #AC9C8D;
+  transform: scale(1.05);
+  border-color: #899481;
 }
 
 /* Larger Resolutions */
@@ -95,6 +110,6 @@ h3 {
   }
 
   .drink {
-    flex: 30%;
+    flex: 20%;
   }
 }
