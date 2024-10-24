@@ -1,0 +1,265 @@
+/* Structure */
+:root {
+    --main-background-color: #c1d0b5;
+    --secondary-background: #99a98f;
+    --div-background: #dce3c7;
+    --text-color: #4D5D53;
+    --nav-text: #fff8de;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-background-color);
+    color: var(--text-color);
+}
+
+#heading {
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#heading h1 {
+    padding-left: 10px;
+}
+
+#main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#genre-page h1 {
+    text-align: center;
+}
+
+.home-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+#home-content {
+    padding: 10px;
+    margin: 10px;
+    line-height: 22px;
+}
+
+#contact-content {
+    padding: 10px;
+    margin: 10px;
+    line-height: 22px;
+}
+
+#contact-content h1 {
+    text-align: center;
+}
+
+.contact-img {
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.genre-content {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.genre-content p, h2 {
+    padding-left: 10px;
+}
+
+.genre {
+    margin: auto;
+    text-align: center;
+}
+
+.genre-single {
+    border: solid var(--secondary-background) 4px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--div-background);
+    max-height: 450px;
+    max-width: 550px;
+
+}
+
+.best-seller {
+    background: var(--div-background);
+    border: solid var(--secondary-background);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.best-seller img {
+    max-width: 100px;
+    max-height: 150px;
+    margin: auto;
+    border: solid var(--nav-text) 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+.best-seller h2, h3, p, a{
+    line-height: 22px;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.center-form {
+    text-align: center;
+}
+
+#form-content {
+    background: var(--div-background);
+    border: solid var(--text-color);
+    border-radius: 10px;
+}
+
+form { 
+    margin: 0 auto; 
+    width:250px;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.book-img {
+    padding: 0px;
+}
+
+#main-footer {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+/* Navigation */
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-background-color);
+    margin: 6px 0;
+  }
+
+#nav-bar {
+    background: var(--secondary-background);
+    padding: 20px;
+    justify-content: center;
+}
+
+#main-nav ul {
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-nav li {
+    list-style-type: none; /*no bullets*/
+    padding: 10px;
+    margin: auto;
+}
+
+#main-nav a {
+    text-decoration: none; /*no underline*/
+    background: var(--secondary-background);
+    color: var(--nav-text);
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+#main-nav a:hover {
+    background: var(--text-color);
+    color: var(--main-background-color);
+}
+/* Visibility */
+.hidden {
+    display: none;
+}
+  
+.hidden-small {
+    display: none;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 0;
+    }
+
+    #nav-bar {
+        background: var(--main-background-color);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    #main-img {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .home-img {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .contact-img {
+        width: auto;
+        height: auto;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+    
+    .hidden-small {
+        display: flex;
+    }
+}
