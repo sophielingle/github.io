@@ -5,6 +5,10 @@ body {
     background: #B2BF9F;
 }
 
+.center {
+    text-align: center;
+}
+
 #main-content h2 {
     text-align: center;
 }
